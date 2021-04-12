@@ -17,10 +17,10 @@ try {
 
 module.exports = {
   siteMetadata: {
-    title: 'GCN',
+    title: 'Private Candidates',
     description:
-      'A starter template to build amazing static websites with Gatsby, Contentful and Netlify',
-    siteUrl: 'https://gcn.netlify.com',
+      'Supporting and campaigning on behalf of private exam candidates',
+    siteUrl: 'https://private-candidates.co.uk',
     image: '/images/share.jpg',
     menuLinks: [
       {
@@ -82,8 +82,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'GCN',
-        short_name: 'GCN',
+        name: 'Private Candidates',
+        short_name: 'Private Candidates',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
