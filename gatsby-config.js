@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         name: 'About',
-        slug: '/about/',
+        slug: '/about-private-candidates/',
       },
       {
         name: 'Contact',
