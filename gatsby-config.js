@@ -24,7 +24,8 @@ module.exports = {
     image: '/images/share.jpg',
     menuLinks: [
       {
-        name: 'Home',
+        name:
+          'Private candidates. Supporting Private exam candidates in the UK',
         slug: '/',
       },
       {
