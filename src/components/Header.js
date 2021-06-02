@@ -57,9 +57,7 @@ const TwoColumns = styled.div`
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
-      image: file(
-        relativePath: { eq: "Non_exam_assessments_private_candidates_.jpg" }
-      ) {
+      image: file(relativePath: { eq: "private_exam_candidates.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
@@ -68,8 +66,6 @@ const Header = () => {
       }
     }
   `)
-
-  console.log(data)
 
   return (
     <StyledHeader>
@@ -83,7 +79,10 @@ const Header = () => {
           A level candidates in the UK.
         </p>
 
-        <Img fluid={data.image?.childImageSharp?.fluid} alt="" />
+        <Img
+          fluid={data.image?.childImageSharp?.fluid}
+          alt="Private exam candidates"
+        />
       </TwoColumns>
     </StyledHeader>
   )
