@@ -26,9 +26,16 @@ module.exports = {
     image: '/images/share.jpg',
     menuLinks: [
       {
-        name:
-          'Private candidates. Supporting Private exam candidates in the UK',
+        name: 'Private candidates',
         slug: '/',
+      },
+      {
+        name: 'GCSE Private Candidates',
+        slug: '/gcse-private-candidates',
+      },
+      {
+        name: 'A Level Private Candidates',
+        slug: '/a-level-private-candidates',
       },
       {
         name: 'About',
