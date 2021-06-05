@@ -11,6 +11,7 @@ const Header = styled.header`
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: ${props => props.theme.sizes.maxWidth};
   margin: 0 auto;
@@ -27,7 +28,6 @@ const Nav = styled.nav`
     min-width: max-content;
     position: relative;
     margin: 0;
-    flex-basis: 100%;
   }
 
   li {
@@ -48,7 +48,6 @@ const Nav = styled.nav`
     color: DarkGray;
     font-weight: 600;
     transition: all 0.2s;
-    border-bottom: 2px solid ${props => props.theme.colors.text};
     &:hover {
       color: white;
     }
@@ -86,17 +85,26 @@ const activeLinkStyle = {
   color: 'white',
 }
 
+const Logo = styled(Link)`
+  width: min-content;
+  padding: 0.4rem 0.8rem;
+  border: 2px solid white;
+
+  & span {
+    display: block;
+    padding-left: 2rem;
+  }
+`
+
 const Menu = () => {
-  const {
-    menuLinks: [siteLink, ...menuLinks],
-  } = useSiteMetadata()
+  const { menuLinks } = useSiteMetadata()
 
   return (
     <Header>
       <Nav>
-        <Link to={siteLink.slug} activeStyle={activeLinkStyle}>
-          {siteLink.name}
-        </Link>
+        <Logo to="/" activeStyle={activeLinkStyle}>
+          Private <span>Candidates</span>
+        </Logo>
 
         <ul>
           {menuLinks.map(link => (
