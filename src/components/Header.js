@@ -75,8 +75,8 @@ const Header = () => {
           Candidates Site
         </h1>
         <p>
-          Designed to support, campaign and give a voice for the private GCSE &
-          A level candidates in the UK.
+          Designed to support, campaign and give a voice to the private GCSE & A
+          level candidates in the UK.
         </p>
 
         <Img
