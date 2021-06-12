@@ -45,11 +45,11 @@ const Nav = styled.nav`
   summary,
   a {
     text-decoration: none;
-    color: DarkGray;
+    color: white;
     font-weight: 600;
     transition: all 0.2s;
     &:hover {
-      color: white;
+      color: DarkGray;
     }
   }
 
