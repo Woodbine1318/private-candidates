@@ -34,10 +34,10 @@ module.exports = async ({ graphql, actions }) => {
     items: posts,
     itemsPerFirstPage: config.siteMetadata.postsPerFirstPage || 7,
     itemsPerPage: config.siteMetadata.postsPerPage || 6,
-    pathPrefix: basePath,
+    pathPrefix: '/blog',
     context: {
-      basePath: basePath === '/' ? '' : basePath,
-      paginationPath: basePath === '/' ? '' : `/${basePath}`,
+      basePath: '/blog',
+      paginationPath: '/blog',
     },
   })
 

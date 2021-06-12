@@ -35,15 +35,15 @@ const Posts = ({ data, pageContext }) => {
 
         {isFirstPage ? (
           <CardList>
-            <Card {...featuredPost} featured basePath={basePath} />
+            <Card {...featuredPost} featured basePath={''} />
             {posts.slice(1).map(({ node: post }) => (
-              <Card key={post.id} {...post} basePath={basePath} />
+              <Card key={post.id} {...post} basePath={''} />
             ))}
           </CardList>
         ) : (
           <CardList>
             {posts.map(({ node: post }) => (
-              <Card key={post.id} {...post} basePath={basePath} />
+              <Card key={post.id} {...post} basePath={''} />
             ))}
           </CardList>
         )}
