@@ -70,7 +70,7 @@ module.exports = async ({ graphql, actions }) => {
   const pages = pagesQuery.data.allContentfulPage.edges
   pages.forEach((page, i) => {
     createPage({
-      path: `/${page.node.slug}/`,
+      path: page.node.slug === '/' ? '/' : `/${page.node.slug}/`,
       component: path.resolve(`./src/templates/page.js`),
       context: {
         slug: page.node.slug,
