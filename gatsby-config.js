@@ -26,16 +26,20 @@ module.exports = {
     image: '/images/share.jpg',
     menuLinks: [
       {
+        name: 'Blog',
+        slug: '/blog',
+      },
+      {
+        name: 'About',
+        slug: '/about-private-candidates/',
+      },
+      {
         name: 'GCSE Private Candidates',
         slug: '/gcse-private-candidates',
       },
       {
         name: 'A Level Private Candidates',
         slug: '/a-level-private-candidates',
-      },
-      {
-        name: 'About',
-        slug: '/about-private-candidates/',
       },
       {
         name: 'Contact',

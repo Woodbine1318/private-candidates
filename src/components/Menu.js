@@ -9,6 +9,7 @@ const Header = styled.header`
   padding: 1.5em 0;
 `
 const Nav = styled.nav`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,10 +61,15 @@ const Nav = styled.nav`
   }
 
   details ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: ${props => props.theme.colors.primary};
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
-    padding-top: 1em;
+    padding: 1em 1.5em 2em;
   }
 
   details li {
