@@ -7,6 +7,7 @@ const Header = styled.header`
   background: ${props => props.theme.colors.primary};
   width: 100%;
   padding: 1.5em 0;
+  z-index: 10;
 `
 const Nav = styled.nav`
   position: relative;
