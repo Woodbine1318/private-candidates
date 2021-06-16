@@ -35,12 +35,6 @@ const Nav = styled.nav`
     display: inline-block;
     margin-left: 1em;
     min-width: max-content;
-
-    &:first-of-type {
-      position: relative;
-      margin: 0;
-      flex-basis: 100%;
-    }
   }
 
   summary,
@@ -79,6 +73,12 @@ const Nav = styled.nav`
   @media (min-width: 768px) {
     > ul {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      & li {
+        line-height: 200%;
+      }
     }
 
     details {

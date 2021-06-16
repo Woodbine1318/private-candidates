@@ -34,6 +34,10 @@ module.exports = {
         slug: '/about-private-candidates/',
       },
       {
+        name: 'Exam Centre',
+        slug: '/private-candidates-exam-centre/',
+      },
+      {
         name: 'GCSE Private Candidates',
         slug: '/gcse-private-candidates',
       },
