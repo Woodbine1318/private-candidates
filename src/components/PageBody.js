@@ -37,6 +37,14 @@ const Body = styled.div`
     }
   }
 
+  a[href^='tel'],
+  a[href^='mailto'] {
+    position: relative;
+    color: #fff;
+    padding: 0.2rem 0.6rem;
+    background-color: ${props => props.theme.colors.primary};
+  }
+
   del {
     text-decoration: line-through;
   }
