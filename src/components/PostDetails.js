@@ -17,9 +17,22 @@ const ReadingTime = styled.p`
   display: inline-block;
 `
 
+const Title = styled.h1`
+  z-index: 2;
+  font-size: 3em;
+  text-transform: capitalize;
+  font-weight: 600;
+  width: 100%;
+  max-width: ${props => props.theme.sizes.maxWidthCentered};
+  padding: 0 1rem;
+  text-align: center;
+  margin-bottom: 2em;
+`
+
 const PostDetails = props => {
   return (
     <Wrapper>
+      <Title>{props.title}</Title>
       <Date>📅 {props.date}</Date>
       <span>•</span>
       <ReadingTime>{`⏱️${props.timeToRead} min read `}</ReadingTime>

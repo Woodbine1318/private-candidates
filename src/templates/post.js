@@ -41,10 +41,11 @@ const PostTemplate = ({ data, pageContext }) => {
         }
         image={ogImage}
       />
-      <Hero title={title} image={heroImage} height={'50vh'} />
+      <Hero image={heroImage} height={'40vh'} />
       <Container>
         {tags && <TagList tags={tags} basePath={basePath} />}
         <PostDetails
+          title={title}
           date={publishDate}
           timeToRead={body.childMarkdownRemark.timeToRead}
         />
